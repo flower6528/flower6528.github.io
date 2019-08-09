@@ -10,26 +10,16 @@ permalink: /about/
         <img src="{{site.baseurl}}/assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{site.author}}">
       </div>
       <p class="subtitle">{{site.about-author}}</p>
-      <ul class="profile">
+      <ul style="list-style: none; font-family:'Sunflower'; font-weight:500;">
         <h1> Careers </h1>
-        <ul class=""> 남원국악예고 2009년 졸업 </ul>
-        <ul class=""> 이화여자대학교 학사 2012년 졸업 </ul>
-        <ul class=""> 이화여자대학교 석사 2015년 졸업 </ul>
-        <ul class=""> 이화여자대학교 박사 2019년 수료(전문연주박사) </ul>
-        <ul class=""> 이화여자대학교 박사 현재 재학중 </ul>
+        {% for item in site.school %}
+          <li> {{ item }} </li>
+        {% endfor %}
         <br>
-        <ul class=""> 1999. 흥보가 완창  </ul>
-        <ul class=""> 2008. 동숭아트센터 전래동화 속 우리소리 "꼭꼭 숨어라 꼭두" 작창 및 소리꾼. </ul>
-        <ul class=""> 2009. 국립창극단 "차세대 명창" 공연  </ul>
-        <ul class=""> 2011. 북촌창우극장 천차만별 콘서트  </ul>
-        <ul class=""> 2012. 고궁에서 우리소리듣기 "덕수궁 공연"  </ul>
-        <ul class=""> 2013. 국립 창극단 어린이 예술학교 "창작 수궁탐험" </ul>
-        <ul class=""> 2014. 국립 민속국악원 "젊은 풍류"  </ul>
-        <ul class=""> 2016. 마포국악울림 "청춘, 한옥에 담다" </ul>
-        <ul class=""> 2017. 리얼발레그룹 "달리는 문" </ul>
-        <ul class=""> 2018. 리얼발레그룹 "보이는 것과 보이지 않는 것의 사이" </ul>
-        <ul class=""> 2014-2018 서울창의예술교육센터 강사역임  </ul>
-        <ul class=""><strong><i> 제 19회 박동진 명창 판소리 명고 대회 일반부 장원 (문체부 장관상) </strong></i></ul>
+        <br>
+        {% for item in site.career %}
+          <li> {{ item }} </li>
+        {% endfor %}
       </ul>
     </section>
 
@@ -40,7 +30,7 @@ permalink: /about/
       {% else %}
         <li class="email"><a href="mailto:example.adam@blog.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
       {% endif %}
-
+<!--
       {% if site.phone %}
         <li class="phone"><a href="tel:{{site.phone}}"><i class="fa fa-phone"></i></a></li>
       {% else %}
@@ -52,6 +42,7 @@ permalink: /about/
       {% else %}
         <li class="website"><a href="https://artemsheludko.github.io" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a></li>
       {% endif %}
+-->
 <!--
       {% if site.linkedin %}
         <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i></a></li>
@@ -76,6 +67,7 @@ permalink: /about/
       {% else %}
         <li class="facebook"><a href="https://facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
       {% endif %}
+      -->
 
       {% if site.instagram %}
         <li class="instagram"><a href="https://instagram.com/{{site.instagram}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -83,12 +75,13 @@ permalink: /about/
         <li class="instagram"><a href="https://instagram.com/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
       {% endif %}
 
+<!--
       {% if site.pinterest %}
         <li class="pinterest"><a href="https://pinterest.com/{{site.pinterest}}" target="_blank"><i class="fa fa-pinterest"></i></a></li>
       {% else %}
         <li class="pinterest"><a href="https://pinterest.com/" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
       {% endif %}
-      -->
+  -->
       </ul>
     </section> <!-- End About Body-->
   </div> <!-- End About Container -->
